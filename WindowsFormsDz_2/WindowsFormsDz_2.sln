@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsDz_2_1", "Windo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsDz_2_2", "WindowsFormsDz_2_2\WindowsFormsDz_2_2.csproj", "{113B604A-FAC9-46EB-998A-C5D40B7625A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsDz_2_3", "WindowsFormsDz_2_3\WindowsFormsDz_2_3.csproj", "{69FC9EF4-3C60-4459-8912-A5BE18A6E875}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{113B604A-FAC9-46EB-998A-C5D40B7625A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{113B604A-FAC9-46EB-998A-C5D40B7625A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{113B604A-FAC9-46EB-998A-C5D40B7625A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69FC9EF4-3C60-4459-8912-A5BE18A6E875}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69FC9EF4-3C60-4459-8912-A5BE18A6E875}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69FC9EF4-3C60-4459-8912-A5BE18A6E875}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69FC9EF4-3C60-4459-8912-A5BE18A6E875}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

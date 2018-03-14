@@ -38,27 +38,28 @@ namespace WindowsFormsDz_2_2
                 DateTime dayT = new DateTime();
                 dayT = DateTime.Parse(textInput.Text);
                 DateTime dayNow = DateTime.Now;
+                TimeSpan tempDay = dayT - dayNow;
                 if (dayT > dayNow)
                 {
                     if (YearRadio.Checked)
                     {
-                        textOutput.Text = (dayT.Year - dayNow.Year).ToString();
+                        textOutput.Text = (tempDay.TotalDays / 365).ToString();
                     }
                     if (MonthRadio.Checked)
-                    { 
-                        textOutput.Text = Math.Abs((dayT.Month - dayNow.Month) + 12 * (dayT.Year - dayNow.Year)).ToString();
+                    {
+                        textOutput.Text = (tempDay.TotalDays / 30).ToString();
                     }
                     if (DayRadio.Checked)
                     {
-                        textOutput.Text = ((int)(dayT - dayNow).TotalDays).ToString();
+                        textOutput.Text = ((int)tempDay.TotalDays).ToString();
                     }
                     if (minutesRadio.Checked)
                     {
-                        textOutput.Text = ((int)(dayT - dayNow).TotalMinutes).ToString();
+                        textOutput.Text = ((int)tempDay.TotalMinutes).ToString();
                     }
                     if (secondsRadio.Checked)
                     {
-                        textOutput.Text = ((int)(dayT - dayNow).TotalSeconds).ToString();
+                        textOutput.Text = ((int)tempDay.TotalSeconds).ToString();
                     }
                 }
                 else
