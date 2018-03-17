@@ -298,8 +298,15 @@ namespace WindowsFormsDz_2_3
         }
         private void ToCount_Click(object sender, EventArgs e)
         {
-            toPayTotal.Text = (Math.Round((PayGasStation + PayCafe), 2)).ToString();
-            timer.Start();
+            if (PayGasStation + PayCafe != 0)
+            {
+                toPayTotal.Text = (Math.Round((PayGasStation + PayCafe), 2)).ToString();
+                timer.Start();
+            }
+            else
+            {
+                MessageBox.Show("Вы не совершили ни каких операций", "Внимание!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
         private void Radio_TextChanged(object sender, EventArgs e)
         {
