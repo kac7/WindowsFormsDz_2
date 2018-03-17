@@ -389,6 +389,9 @@ namespace WindowsFormsDz_2_3
             {
                 textBoxFuelPrice.Text = $"{oil[3]}";
             }
+            textBoxRadioCount.Text = "0,00";
+            textBoxRadioSum.Text = "0,00";
+            toPayGasStation.Text = "0,00";
         }
 
         private void RadioButtonCheckedChanged(object sender, EventArgs e)
@@ -401,6 +404,7 @@ namespace WindowsFormsDz_2_3
                 toPayGasStation.Text = "0,00";
                 groupBoxFuel.Text = "К оплате";
                 label5.Text = "грн.";
+                textBoxRadioCount.Focus();
             }
             if (radioButtonSum.Checked)
             {
@@ -410,6 +414,7 @@ namespace WindowsFormsDz_2_3
                 toPayGasStation.Text = "0,00";
                 groupBoxFuel.Text = "К выдаче";
                 label5.Text = "л.";
+                textBoxRadioSum.Focus();
             }
         }
 
